@@ -1,0 +1,1152 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sun Dec  8 19:29:43 2024
+| Host         : DESKTOP-9CVK5T6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |  1074 |
+|    Minimum number of control sets                        |  1074 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   224 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |  1074 |
+| >= 0 to < 4        |    25 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |  1035 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             122 |           66 |
+| No           | No                    | Yes                    |             100 |           45 |
+| No           | Yes                   | No                     |              65 |           17 |
+| Yes          | No                    | No                     |              66 |           18 |
+| Yes          | No                    | Yes                    |            8202 |         2966 |
+| Yes          | Yes                   | No                     |              37 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+--------------------------------------+---------------------------------------+------------------+----------------+--------------+
+|          Clock Signal          |             Enable Signal            |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------+--------------------------------------+---------------------------------------+------------------+----------------+--------------+
+|  baud_BUFG                     | uart1/transmitter/bit_out_i_2_n_0    | uart1/transmitter/bit_out0            |                1 |              1 |         1.00 |
+|  genblk1[0].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[10].fDiv/clkDiv_reg_0 |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[3].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[2].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[4].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[5].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[6].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[8].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[14].fDiv/clkDiv_reg_0 |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[9].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[11].fDiv/clkDiv_reg_0 |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[12].fDiv/clkDiv_reg_0 |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[13].fDiv/clkDiv_reg_0 |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[7].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[1].fDiv/clkDiv_reg_0  |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[15].fDiv/clkDiv_reg_0 |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[16].fDiv/clkDiv_reg_0 |                                      |                                       |                1 |              1 |         1.00 |
+|  genblk1[17].fDiv/clkDiv_reg_0 |                                      |                                       |                1 |              1 |         1.00 |
+|  baud_BUFG                     | uart2/transmitter/bit_out_i_2__0_n_0 | uart2/transmitter/bit_out0            |                1 |              1 |         1.00 |
+|  CLK50MHZ_BUFG                 |                                      | uut/db_data/Iv_i_1__0_n_0             |                1 |              1 |         1.00 |
+|  CLK50MHZ_BUFG                 | uut/db_clk/clear                     |                                       |                1 |              1 |         1.00 |
+|  CLK50MHZ_BUFG                 | uut/db_data/Iv_i_1__0_n_0            |                                       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                 | vga/w_p_tick                         |                                       |                1 |              1 |         1.00 |
+|  fdivTarget/CLK                |                                      |                                       |                1 |              2 |         2.00 |
+| ~uut/db_clk/O_reg_0            | uut/cnt__3                           | uut/cnt[3]_i_1_n_0                    |                1 |              4 |         4.00 |
+|  CLK50MHZ_BUFG                 | uut/db_data/count[3]_i_1__0_n_0      | uut/db_data/Iv_i_1__0_n_0             |                1 |              4 |         4.00 |
+|  long_flag                     |                                      |                                       |                4 |              6 |         1.50 |
+|  clk_IBUF_BUFG                 |                                      |                                       |                5 |              6 |         1.20 |
+|  long_flag                     | ps2controller/data0                  |                                       |                4 |              7 |         1.75 |
+|  received1_BUFG                | at/mem[100][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[975][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[994][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[983][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[991][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[981][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  baud_BUFG                     |                                      | uart1/receiver/count[7]_i_1_n_0       |                2 |              8 |         4.00 |
+|  baud_BUFG                     |                                      | uart1/transmitter/count[7]_i_1__0_n_0 |                2 |              8 |         4.00 |
+|  baud_BUFG                     |                                      | uart2/receiver/count[7]_i_1__1_n_0    |                2 |              8 |         4.00 |
+|  baud_BUFG                     |                                      | uart2/transmitter/count[7]_i_1__2_n_0 |                2 |              8 |         4.00 |
+|  baud_BUFG                     | uart1/receiver/E[0]                  |                                       |                2 |              8 |         4.00 |
+|  baud_BUFG                     | uart1/transmitter/temp[7]_i_1_n_0    |                                       |                1 |              8 |         8.00 |
+|  baud_BUFG                     | uart2/receiver/E[0]                  |                                       |                2 |              8 |         4.00 |
+|  baud_BUFG                     | uart2/transmitter/temp[7]_i_1__0_n_0 |                                       |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[9][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[996][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[977][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  long_flag                     | uut/E[0]                             |                                       |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[243][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[245][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[263][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[249][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[23][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[270][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[272][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[238][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[254][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[230][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[228][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[241][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[247][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[22][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[248][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[256][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[257][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[233][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[24][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[250][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[236][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[25][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[260][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[265][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[232][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[237][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[242][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[258][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[244][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[235][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[246][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[255][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[251][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[229][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[259][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[261][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[264][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[231][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[266][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[269][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[268][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[26][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[252][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[262][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[271][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[253][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[267][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[234][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[239][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[240][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[1004][7]_i_1_n_0              | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[1005][7]_i_1_n_0              | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[1003][7]_i_1_n_0              | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[1006][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1000][7]_i_1_n_0              | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[1007][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1002][7]_i_1_n_0              | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[1001][7]_i_1_n_0              | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[0][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[101][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[102][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[103][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1018][7]_i_1_n_0              | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[1022][7]_i_1_n_0              | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[105][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[106][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1014][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1015][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1011][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1023][7]_i_1_n_0              | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[10][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1009][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1010][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1012][7]_i_1_n_0              | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[1013][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1019][7]_i_1_n_0              | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[104][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[109][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[107][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[110][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[111][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[1020][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[112][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[113][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[114][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[115][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[116][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[317][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1021][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[108][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[1017][7]_i_1_n_0              | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[1016][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1008][7]_i_1_n_0              | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[13][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[160][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[127][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[136][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[161][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[117][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[142][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[144][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[162][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[134][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[14][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[139][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[135][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[153][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[156][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[118][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[157][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[137][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[124][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[138][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[147][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[148][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[128][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[141][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[146][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[132][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[151][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[152][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[143][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[155][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[122][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[133][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[125][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[145][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[119][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[130][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[149][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[121][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[131][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[140][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[154][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[11][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[126][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[158][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[12][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[150][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[159][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[15][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[120][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[129][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[123][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[193][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[195][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[199][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[174][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[17][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[167][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[166][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[196][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[188][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[16][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[197][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[171][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[19][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[177][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[170][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[201][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[203][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[192][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[209][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[18][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[168][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[175][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[176][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[183][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[184][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[187][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[198][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[185][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[1][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[186][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[20][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[165][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[189][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[191][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[180][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[194][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[200][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[202][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[206][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[207][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[163][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[210][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[179][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[205][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[208][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[178][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[204][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[181][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[164][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[169][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[172][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[173][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[182][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[190][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[214][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[225][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[212][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[219][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[226][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[227][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[211][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[216][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[218][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[217][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[220][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[221][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[223][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[21][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[213][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[215][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[224][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[222][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[29][7]_i_1_n_0                | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[312][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[316][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[27][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[313][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[314][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[318][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[287][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[280][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[277][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[278][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[291][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[301][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[307][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[293][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[30][7]_i_1_n_0                | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[2][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[288][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[315][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[319][7]_i_1_n_0               | sp_reset/singlePulseReset             |                8 |              8 |         1.00 |
+|  received1_BUFG                | at/mem[311][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[304][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[302][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[283][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[285][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[286][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[275][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[289][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[290][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[296][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[299][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[276][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[292][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[294][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[284][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[300][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[282][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[305][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[281][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[295][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[303][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[306][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[297][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[309][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[28][7]_i_1_n_0                | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[308][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[310][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[274][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[279][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[273][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[298][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[356][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[337][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[339][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[349][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[348][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[340][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[358][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[360][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[362][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[347][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[364][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[32][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[332][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[335][7]_i_1_n_0               | sp_reset/singlePulseReset             |                8 |              8 |         1.00 |
+|  received1_BUFG                | at/mem[351][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[357][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[35][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[370][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[371][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[372][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[373][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[34][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[363][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[365][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[366][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[367][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[327][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[341][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[322][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[324][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[320][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[325][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[336][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[329][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[331][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[338][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[33][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[345][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[346][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[350][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[352][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[355][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[359][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[361][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[368][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[328][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[369][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[321][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[36][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[326][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[31][7]_i_1_n_0                | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[330][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[334][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[342][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[343][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[333][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[344][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[353][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[323][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[354][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[415][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[379][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[394][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[396][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[392][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[398][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[411][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[416][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[399][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[403][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[382][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[378][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[388][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[384][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[390][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[374][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[400][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[381][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[391][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[417][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[418][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[37][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[419][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[41][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[420][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[406][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[421][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[422][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[423][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[402][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[393][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[397][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[386][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[395][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[405][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[377][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[404][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[380][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[39][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[38][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[407][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[408][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[40][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[409][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[401][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[375][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[410][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[383][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[385][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[389][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[3][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[412][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[387][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[413][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[414][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[376][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[445][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[454][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[459][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[435][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[434][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[463][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[467][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[426][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[425][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[449][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[469][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[429][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[46][7]_i_1_n_0                | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[470][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[464][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[472][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[43][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[461][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[473][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[437][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[427][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[44][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[453][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[471][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[45][7]_i_1_n_0                | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[474][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[436][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[447][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[475][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[458][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[438][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[448][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[430][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[476][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[477][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[446][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[444][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[468][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[432][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[450][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[456][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[462][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[439][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[440][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[433][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[457][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[451][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[460][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[466][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[455][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[465][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[424][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[42][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[452][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[428][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[442][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[443][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[441][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[431][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[51][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[520][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[496][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[501][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[503][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[492][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[47][7]_i_1_n_0                | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[49][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[504][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[484][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[507][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[483][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[489][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[495][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[513][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[517][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[498][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[518][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[479][7]_i_1_n_0               | sp_reset/singlePulseReset             |                8 |              8 |         1.00 |
+|  received1_BUFG                | at/mem[481][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[482][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[493][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[494][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[488][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[490][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[478][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[487][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[499][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[502][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[485][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[4][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[500][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[508][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[48][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[491][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[480][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[505][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[50][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[511][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[497][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[512][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[506][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[510][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[486][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[514][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[515][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[509][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[516][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[519][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[558][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[559][7]_i_1_n_0               | sp_reset/singlePulseReset             |                8 |              8 |         1.00 |
+|  received1_BUFG                | at/mem[55][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[563][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[530][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[536][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[525][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[524][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[545][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[534][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[52][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[533][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[553][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[556][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[564][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[569][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[56][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[549][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[570][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[567][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[568][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[53][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[571][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[572][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[527][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[531][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[542][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[540][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[544][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[546][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[529][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[539][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[550][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[552][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[557][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[561][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[522][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[560][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[562][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[565][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[566][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[537][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[528][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[547][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[541][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[551][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[526][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[532][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[548][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[54][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[523][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[555][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[538][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[535][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[521][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[543][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[554][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[612][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[613][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[614][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[615][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[595][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[616][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[617][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[585][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[593][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[600][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[574][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[582][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[588][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[590][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[587][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[59][7]_i_1_n_0                | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[5][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[606][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[581][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[609][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[610][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[605][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[604][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[586][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[60][7]_i_1_n_0                | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[57][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[58][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[592][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[602][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[598][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[577][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[603][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[576][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[594][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[580][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[583][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[584][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[575][7]_i_1_n_0               | sp_reset/singlePulseReset             |                8 |              8 |         1.00 |
+|  received1_BUFG                | at/mem[579][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[578][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[589][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[591][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[596][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[607][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[597][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[608][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[611][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[573][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[601][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[599][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[660][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[661][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[625][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[635][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[637][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[653][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[626][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[638][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[633][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[618][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[621][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[630][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[632][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[641][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[652][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[620][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[634][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[657][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[662][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[636][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[654][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[663][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[658][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[61][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[648][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[623][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[646][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[624][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[629][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[639][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[63][7]_i_1_n_0                | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[640][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[627][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[643][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[644][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[649][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[650][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[656][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[622][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[647][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[642][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[628][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[631][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[645][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[64][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[619][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[62][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[651][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[655][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[659][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[65][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[683][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[69][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[6][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[703][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[687][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[705][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[706][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[704][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[708][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[685][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[678][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[698][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[709][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[70][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[668][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[707][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[681][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[684][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[697][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[701][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[673][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[677][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[676][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[680][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[669][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[695][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[682][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[670][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[672][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[674][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[692][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[667][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[679][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[664][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[67][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[699][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[700][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[702][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[686][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[688][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[694][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[696][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[68][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[690][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[691][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[665][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[675][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[693][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[671][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[689][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[666][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[66][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[750][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[753][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[754][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[713][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[717][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[72][7]_i_1_n_0                | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[720][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[741][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[712][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[748][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[723][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[752][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[74][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[714][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[718][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[710][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[742][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[716][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[740][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[746][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[736][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[745][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[756][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[757][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[733][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[755][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[743][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[711][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[749][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[751][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[722][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[734][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[721][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[732][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[724][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[727][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[728][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[715][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[730][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[71][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[737][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[73][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[744][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[719][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[725][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[735][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[731][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[738][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[729][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[726][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[739][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[747][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[799][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[7][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[800][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[761][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[760][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[774][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[790][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[791][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[785][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[79][7]_i_1_n_0                | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[801][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[793][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[763][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[76][7]_i_1_n_0                | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[775][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[77][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[769][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[771][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[766][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[783][7]_i_1_n_0               | sp_reset/singlePulseReset             |                8 |              8 |         1.00 |
+|  received1_BUFG                | at/mem[784][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[762][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[794][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[764][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[772][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[758][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[768][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[776][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[765][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[779][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[787][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[788][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[78][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[767][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[778][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[759][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[789][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[792][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[75][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[770][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[773][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[777][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[780][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[781][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[782][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[795][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[796][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[786][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[797][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[798][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[819][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[81][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[821][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[816][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[826][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[828][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[830][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[833][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[809][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[810][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[808][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[814][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[815][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[825][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[82][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[831][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[838][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[806][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[807][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[812][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[813][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[817][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[818][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[829][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[804][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[822][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[820][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[827][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[802][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[805][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[811][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[80][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[823][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[824][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[832][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[834][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[836][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[837][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[803][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[835][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[871][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[842][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[862][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[866][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[873][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[874][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[876][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[867][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[856][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[850][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[847][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[841][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[857][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[85][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[860][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[84][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[851][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[840][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[858][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[853][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[861][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[863][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[864][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[852][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[872][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[839][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[854][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[845][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[848][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[855][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[868][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[870][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[846][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[849][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[844][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[875][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[83][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[843][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[859][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[865][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[869][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[86][7]_i_1_n_0                | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[919][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[903][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[905][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[907][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[926][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[885][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[91][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[883][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[881][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[891][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[911][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[918][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[901][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[917][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[877][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[880][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[889][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[893][7]_i_1_n_0               | sp_reset/singlePulseReset             |                8 |              8 |         1.00 |
+|  received1_BUFG                | at/mem[882][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[87][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[8][7]_i_1_n_0                 | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[916][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[924][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[879][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[923][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[908][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[925][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[878][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[894][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[899][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[909][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[886][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[887][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[896][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[902][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[892][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[904][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[906][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[90][7]_i_1_n_0                | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[910][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[884][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[888][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[88][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[898][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[89][7]_i_1_n_0                | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[895][7]_i_1_n_0               | sp_reset/singlePulseReset             |                6 |              8 |         1.33 |
+|  received1_BUFG                | at/mem[897][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[900][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[912][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[913][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[915][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[920][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[921][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[922][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[890][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[914][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[970][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[931][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[933][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[92][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[969][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[928][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[949][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[940][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[94][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[952][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[954][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[95][7]_i_1_n_0                | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[964][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[956][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[927][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[937][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[950][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  received1_BUFG                | at/mem[941][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[963][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[965][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[936][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[961][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[968][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[96][7]_i_1_n_0                | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[930][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[934][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[938][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[932][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[939][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[93][7]_i_1_n_0                | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[935][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[946][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[947][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[942][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[955][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[929][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[945][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[958][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[959][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[943][7]_i_1_n_0               | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[957][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[966][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[960][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[948][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[953][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[944][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[951][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[962][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[967][7]_i_1_n_0               | sp_reset/singlePulseReset             |                4 |              8 |         2.00 |
+|  received1_BUFG                | at/mem[99][7]_i_1_n_0                | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[971][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[998][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[980][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[995][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[999][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[972][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[98][7]_i_1_n_0                | sp_reset/singlePulseReset             |                7 |              8 |         1.14 |
+|  received1_BUFG                | at/mem[997][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[986][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[973][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[978][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[976][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[982][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[984][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[985][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[988][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[97][7]_i_1_n_0                | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[979][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[987][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[974][7]_i_1_n_0               | sp_reset/singlePulseReset             |                3 |              8 |         2.67 |
+|  received1_BUFG                | at/mem[989][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[990][7]_i_1_n_0               | sp_reset/singlePulseReset             |                5 |              8 |         1.60 |
+|  received1_BUFG                | at/mem[992][7]_i_1_n_0               | sp_reset/singlePulseReset             |                2 |              8 |         4.00 |
+|  received1_BUFG                | at/mem[993][7]_i_1_n_0               | sp_reset/singlePulseReset             |                1 |              8 |         8.00 |
+|  CLK50MHZ_BUFG                 |                                      |                                       |                5 |              9 |         1.80 |
+| ~uut/db_clk/O_reg_0            |                                      |                                       |                3 |              9 |         3.00 |
+|  vga/w_p_tick                  |                                      | sp_reset/singlePulseReset             |                3 |             10 |         3.33 |
+|  vga/w_p_tick                  | vga/v_count_next_1                   | sp_reset/singlePulseReset             |                3 |             10 |         3.33 |
+|  received1_BUFG                |                                      | sp_reset/singlePulseReset             |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG                 | vga/w_p_tick                         | vga/h_count_reg_reg[9]_0              |                3 |             11 |         3.67 |
+|  CLK50MHZ_BUFG                 | uut/oflag_i_1_n_0                    |                                       |                2 |             16 |         8.00 |
+|  clk_IBUF_BUFG                 | uut/sel                              | uut/flag                              |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG                 |                                      | baudrate_gen/counter[0]_i_1_n_0       |                8 |             32 |         4.00 |
+|  baud_BUFG                     |                                      |                                       |               30 |             72 |         2.40 |
+|  clk_IBUF_BUFG                 |                                      | sp_reset/singlePulseReset             |               37 |             80 |         2.16 |
++--------------------------------+--------------------------------------+---------------------------------------+------------------+----------------+--------------+
+
+

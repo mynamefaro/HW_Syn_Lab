@@ -1,0 +1,358 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec  8 20:26:35 2024
+# Process ID: 12032
+# Current directory: C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22136 C:\Users\nobig\Desktop\CU\HWSynLab\FinalProject\FinalProject.xpr
+# Log file: C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/vivado.log
+# Journal file: C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.xpr
+INFO: [Project 1-313] Project file moved from 'D:/_All/FinalProject' since last save.
+ERROR: [Project 1-208] No val for DA Elab Attr
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirModelSim has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirQuesta has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirXcelium has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirVCS has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirRiviera has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirActiveHdl has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirModelSim has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirQuesta has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirXcelium has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirVCS has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirRiviera has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirActiveHdl has no valid value
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionXsim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionActiveHdl
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionXsim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionActiveHdl
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPDefaultOutputPath
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name EnableResourceEstimation
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimCompileState
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DcpsUptoDate
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name ClassicSocBoot
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name LocalIPRepoLeafDirName
+WARNING: [Project 1-231] Project 'FinalProject.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 650.113 ; gain = 65.180
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top
+WARNING: [Synth 8-2611] redeclaration of ansi port clkDiv is not allowed [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+WARNING: [Synth 8-976] clkDiv has already been declared [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+WARNING: [Synth 8-2654] second declaration of clkDiv ignored [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+INFO: [Synth 8-994] clkDiv is declared here [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:4]
+WARNING: [Synth 8-2611] redeclaration of ansi port segments is not allowed [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:9]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 778.500 ; gain = 0.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clockDiv' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clockDiv' (1#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HMAX bound to: 799 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VMAX bound to: 524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (2#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ascii_test' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3]
+	Parameter MEMSIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (3#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_test' (4#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3]
+INFO: [Synth 8-6157] synthesizing module 'baudrate_gen' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/baudrate_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baudrate_gen' (5#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/baudrate_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'singlePulser' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/singlePulser.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'singlePulser' (6#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/singlePulser.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart.v:22]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (7#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (8#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (9#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart.v:22]
+WARNING: [Synth 8-689] width (9) of port connection 'data_transmit' does not match port width (8) of module 'uart' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:82]
+INFO: [Synth 8-6157] synthesizing module 'PS2Controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:145]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Controller' (10#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (11#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (12#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'quadSevenSeg' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hexTo7Segment' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hexTo7Segment' (13#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:4]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (14#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3]
+WARNING: [Synth 8-3331] design uart has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 961.973 ; gain = 183.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 961.973 ; gain = 183.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 961.973 ; gain = 183.918
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1283.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:46 . Memory (MB): peak = 1336.445 ; gain = 558.391
+41 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:46 . Memory (MB): peak = 1336.445 ; gain = 558.391
+write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+refresh_design
+WARNING: [Synth 8-2611] redeclaration of ansi port clkDiv is not allowed [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+WARNING: [Synth 8-976] clkDiv has already been declared [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+WARNING: [Synth 8-2654] second declaration of clkDiv ignored [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+INFO: [Synth 8-994] clkDiv is declared here [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:4]
+WARNING: [Synth 8-2611] redeclaration of ansi port segments is not allowed [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:9]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1336.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clockDiv' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clockDiv' (1#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HMAX bound to: 799 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VMAX bound to: 524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (2#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ascii_test' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3]
+	Parameter MEMSIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (3#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_test' (4#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3]
+INFO: [Synth 8-6157] synthesizing module 'baudrate_gen' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/baudrate_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baudrate_gen' (5#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/baudrate_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'singlePulser' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/singlePulser.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'singlePulser' (6#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/singlePulser.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart.v:22]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (7#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (8#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (9#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart.v:22]
+WARNING: [Synth 8-689] width (9) of port connection 'data_transmit' does not match port width (8) of module 'uart' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:82]
+INFO: [Synth 8-6157] synthesizing module 'PS2Controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:145]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Controller' (10#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (11#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (12#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'quadSevenSeg' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hexTo7Segment' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hexTo7Segment' (13#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:4]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (14#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3]
+WARNING: [Synth 8-3331] design uart has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.430 ; gain = 111.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin fdivTarget:clk to constant 0 [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:125]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1448.430 ; gain = 111.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1448.430 ; gain = 111.984
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:31 . Memory (MB): peak = 1451.469 ; gain = 115.023
+write_schematic -format pdf -orientation portrait -force C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+refresh_design
+WARNING: [Synth 8-2611] redeclaration of ansi port clkDiv is not allowed [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+WARNING: [Synth 8-976] clkDiv has already been declared [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+WARNING: [Synth 8-2654] second declaration of clkDiv ignored [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:8]
+INFO: [Synth 8-994] clkDiv is declared here [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:4]
+WARNING: [Synth 8-2611] redeclaration of ansi port segments is not allowed [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:9]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1493.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HMAX bound to: 799 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VMAX bound to: 524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (1#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ascii_test' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3]
+	Parameter MEMSIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (2#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_test' (3#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3]
+INFO: [Synth 8-6157] synthesizing module 'baudrate_gen' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/baudrate_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baudrate_gen' (4#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/baudrate_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'singlePulser' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/singlePulser.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'singlePulser' (5#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/singlePulser.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart.v:22]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (6#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (7#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart_tx.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (8#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/uart.v:22]
+WARNING: [Synth 8-689] width (9) of port connection 'data_transmit' does not match port width (8) of module 'uart' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:82]
+INFO: [Synth 8-6157] synthesizing module 'PS2Controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:145]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Controller' (9#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (10#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (11#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clockDiv' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clockDiv' (12#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3]
+INFO: [Synth 8-6157] synthesizing module 'quadSevenSeg' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hexTo7Segment' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hexTo7Segment' (13#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/hexTo7Segment.v:4]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (14#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3]
+WARNING: [Synth 8-3331] design uart has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1543.723 ; gain = 50.492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1543.723 ; gain = 50.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1543.723 ; gain = 50.492
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1561.477 ; gain = 68.246
+write_schematic -format pdf -orientation portrait -force C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+write_schematic C:/Users/nobig/Desktop/CU/HWSynLab/schematic.sch
+C:/Users/nobig/Desktop/CU/HWSynLab/schematic.sch
+write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf

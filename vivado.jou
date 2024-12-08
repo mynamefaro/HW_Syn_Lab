@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec  8 20:26:35 2024
+# Process ID: 12032
+# Current directory: C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22136 C:\Users\nobig\Desktop\CU\HWSynLab\FinalProject\FinalProject.xpr
+# Log file: C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/vivado.log
+# Journal file: C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+refresh_design
+write_schematic -format pdf -orientation portrait -force C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+refresh_design
+write_schematic -format pdf -orientation portrait -force C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+write_schematic C:/Users/nobig/Desktop/CU/HWSynLab/schematic.sch
+write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf

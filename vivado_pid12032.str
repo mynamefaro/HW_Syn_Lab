@@ -1,0 +1,698 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 12032
+License: Customer
+
+Current time: 	Sun Dec 08 20:26:57 ICT 2024
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 383 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	nobig
+User home directory: C:/Users/nobig
+User working directory: C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/nobig/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/nobig/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/nobig/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/vivado.log
+Vivado journal file location: 	C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/vivado.jou
+Engine tmp dir: 	C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/.Xil/Vivado-12032-DESKTOP-KIR43FC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 549 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Warning: 'This project was created with a future version of Vivado. It will be opened in read-only mode for the protection of unrecognized data. Please use 'File | Save Project As...' if you need to alter a copy of this project. The project may or may not open reliably with this version of Vivado. OK to proceed and open the project? (Future Project Version)'
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\nobig\Desktop\CU\HWSynLab\FinalProject\FinalProject.xpr. Version: Vivado v2024.1 
+selectButton("PAResourceOtoP.PABaseTab_THIS_PROJECT_WILL_BE_OPENED_IN_READ_ONLY_OK", "OK"); // JButton (C, I)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 41 MB. Current time: 12/8/24, 8:27:01 PM ICT
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/_All/FinalProject' since last save. 
+// Tcl Message: ERROR: [Project 1-208] No val for DA Elab Attr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 97 MB (+99585kb) [00:00:25]
+// [Engine Memory]: 597 MB (+474114kb) [00:00:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  4967 ms.
+// [Engine Memory]: 641 MB (+15687kb) [00:00:29]
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 650.113 ; gain = 65.180 
+// Tcl Message: ERROR: [Common 17-39] 'open_project' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_project' failed due to earlier errors.  
+// [Engine Memory]: 708 MB (+35685kb) [00:00:31]
+// Elapsed time: 12 seconds
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// y (cp): Project is Read-Only: addNotify
+// a (cp): Critical Messages: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (y)
+dismissDialog("Project is Read-Only"); // y (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 745 MB. GUI used memory: 48 MB. Current time: 12/8/24, 8:27:20 PM ICT
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+// [Engine Memory]: 745 MB (+1732kb) [00:00:43]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, cp)
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), q7seg : quadSevenSeg (quadSevenSeg.v)]", 13); // B (D, cp)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), at : ascii_test (ascii_test.v)]", 3); // B (D, cp)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 272ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 774ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 578 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+// [GUI Memory]: 104 MB (+1748kb) [00:10:53]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: top 
+// HMemoryUtils.trashcanNow. Engine heap size: 850 MB. GUI used memory: 47 MB. Current time: 12/8/24, 8:37:45 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,022 MB. GUI used memory: 47 MB. Current time: 12/8/24, 8:38:00 PM ICT
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,151 MB. GUI used memory: 47 MB. Current time: 12/8/24, 8:38:14 PM ICT
+// [Engine Memory]: 1,151 MB (+387463kb) [00:11:34]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,236 MB (+28102kb) [00:11:37]
+// Xgd.load filename: C:/Xilinx/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 2.3s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.5s
+// [GUI Memory]: 119 MB (+9905kb) [00:11:39]
+// Schematic: addNotify
+// [GUI Memory]: 130 MB (+5682kb) [00:11:41]
+// WARNING: HEventQueue.dispatchEvent() is taking  5894 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Synth 8-994] clkDiv is declared here [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:4] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 778.500 ; gain = 0.445 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3] INFO: [Synth 8-6157] synthesizing module 'clockDiv' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3] INFO: [Synth 8-6155] done synthesizing module 'clockDiv' (1#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3] INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21] 
+// Tcl Message: 	Parameter HD bound to: 640 - type: integer  	Parameter HF bound to: 48 - type: integer  	Parameter HB bound to: 16 - type: integer  	Parameter HR bound to: 96 - type: integer  	Parameter HMAX bound to: 799 - type: integer  	Parameter VD bound to: 480 - type: integer  	Parameter VF bound to: 10 - type: integer  	Parameter VB bound to: 33 - type: integer  	Parameter VR bound to: 2 - type: integer  	Parameter VMAX bound to: 524 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (2#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21] INFO: [Synth 8-6157] synthesizing module 'ascii_test' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3] 
+// Tcl Message: 	Parameter MEMSIZE bound to: 1024 - type: integer  
+// Tcl Message: 	Parameter COUNT_MAX bound to: 19 - type: integer  	Parameter COUNT_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (14#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3] INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 961.973 ; gain = 183.918 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 961.973 ; gain = 183.918 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 961.973 ; gain = 183.918 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc] Finished Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1283.113 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:46 . Memory (MB): peak = 1336.445 ; gain = 558.391 
+// Tcl Message: 41 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:46 . Memory (MB): peak = 1336.445 ; gain = 558.391 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 46 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// Elapsed time: 24 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 291, 22, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SchMenuAndMouse_SAVE_AS_PDF_FILE, "Save as PDF File..."); // af (al, cp)
+// k (cp): Save as PDF File: addNotify
+selectButton(PAResourceQtoS.SaveSchematicDialog_SPECIFY_OUTPUT_PDF_FILE, (String) null); // q (ak)
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/nobig/Desktop/CU/HWSynLab", 1); // ak (ag, JDialog)
+setFileChooser("C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// Tcl Command: 'write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf'
+// TclEventType: WRITE_SCHEMATIC
+// Tcl Message: write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf 
+// Tcl Message: C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf 
+dismissDialog("Save as PDF File"); // k (cp)
+// [GUI Memory]: 137 MB (+964kb) [00:12:32]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1007 ms. Increasing delay to 3000 ms.
+// Elapsed time: 279 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("top.v", 156, 112); // D (w, cp)
+selectCodeEditor("top.v", 160, 75); // D (w, cp)
+selectCodeEditor("top.v", 176, 73); // D (w, cp)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectCodeEditor("top.v", 173, 77); // D (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // af (al, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Synth 8-994] clkDiv is declared here [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:4] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1336.445 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3] INFO: [Synth 8-6157] synthesizing module 'clockDiv' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3] INFO: [Synth 8-6155] done synthesizing module 'clockDiv' (1#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:3] INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21] 
+// Tcl Message: 	Parameter HD bound to: 640 - type: integer  	Parameter HF bound to: 48 - type: integer  	Parameter HB bound to: 16 - type: integer  	Parameter HR bound to: 96 - type: integer  	Parameter HMAX bound to: 799 - type: integer  	Parameter VD bound to: 480 - type: integer  	Parameter VF bound to: 10 - type: integer  	Parameter VB bound to: 33 - type: integer  	Parameter VR bound to: 2 - type: integer  	Parameter VMAX bound to: 524 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (2#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21] INFO: [Synth 8-6157] synthesizing module 'ascii_test' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3] 
+// Tcl Message: 	Parameter MEMSIZE bound to: 1024 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5] INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:13] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (3#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5] 
+// Tcl Message: 	Parameter COUNT_MAX bound to: 19 - type: integer  	Parameter COUNT_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (14#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3] INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.430 ; gain = 111.984 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1448.430 ; gain = 111.984 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1448.430 ; gain = 111.984 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 81 MB. Current time: 12/8/24, 8:45:38 PM ICT
+// Engine heap size: 1,290 MB. GUI used memory: 81 MB. Current time: 12/8/24, 8:45:38 PM ICT
+// WARNING: HEventQueue.dispatchEvent() is taking  1901 ms.
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 60 MB. Current time: 12/8/24, 8:45:42 PM ICT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.3s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3365 ms.
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc] Finished Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:31 . Memory (MB): peak = 1451.469 ; gain = 115.023 
+// Elapsed time: 32 seconds
+dismissDialog("Reloading"); // bx (cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 241, 118, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ac (al, cp)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, cp)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_SCHEMATIC, "Export Schematic..."); // af (al, cp)
+// a (cp): Export Schematic: addNotify
+dismissDialog("Export Schematic"); // a (cp)
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 251, 200, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ac (al, cp)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_EXPAND_COLLAPSE, "Expand/Collapse"); // ac (al, cp)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SchMenuAndMouse_SAVE_AS_PDF_FILE, "Save as PDF File..."); // af (al, cp)
+// k (cp): Save as PDF File: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// Tcl Command: 'write_schematic -format pdf -orientation portrait -force C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf'
+// TclEventType: WRITE_SCHEMATIC
+// Tcl Message: write_schematic -format pdf -orientation portrait -force C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf 
+// Tcl Message: C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf 
+dismissDialog("Save as PDF File"); // k (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 2); // k (j, cp)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cQ, cp)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Synth 8-994] clkDiv is declared here [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/clockDiv.v:4] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1493.230 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3] INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21] 
+// Tcl Message: 	Parameter HD bound to: 640 - type: integer  	Parameter HF bound to: 48 - type: integer  	Parameter HB bound to: 16 - type: integer  	Parameter HR bound to: 96 - type: integer  	Parameter HMAX bound to: 799 - type: integer  	Parameter VD bound to: 480 - type: integer  	Parameter VF bound to: 10 - type: integer  	Parameter VB bound to: 33 - type: integer  	Parameter VR bound to: 2 - type: integer  	Parameter VMAX bound to: 524 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (1#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/vga_controller.v:21] INFO: [Synth 8-6157] synthesizing module 'ascii_test' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_test.v:3] 
+// Tcl Message: 	Parameter MEMSIZE bound to: 1024 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5] INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:13] INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (2#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/ascii_rom.v:5] 
+// Tcl Message: 	Parameter COUNT_MAX bound to: 19 - type: integer  	Parameter COUNT_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (14#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/quadSevenSeg.v:3] INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/sources_1/new/top.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1543.723 ; gain = 50.492 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1543.723 ; gain = 50.492 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1543.723 ; gain = 50.492 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,290 MB. GUI used memory: 127 MB. Current time: 12/8/24, 8:48:04 PM ICT
+// WARNING: HEventQueue.dispatchEvent() is taking  1397 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 63 MB. Current time: 12/8/24, 8:48:05 PM ICT
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 61 MB. Current time: 12/8/24, 8:48:09 PM ICT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.3s
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2946 ms.
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc] Finished Parsing XDC File [C:/Users/nobig/Desktop/CU/HWSynLab/FinalProject/FinalProject.srcs/constrs_1/new/constraint.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 1561.477 ; gain = 68.246 
+// Elapsed time: 30 seconds
+dismissDialog("Reloading"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 55 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 135, 127, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SchMenuAndMouse_SAVE_AS_PDF_FILE, "Save as PDF File..."); // af (al, cp)
+// k (cp): Save as PDF File: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// Tcl Command: 'write_schematic -format pdf -orientation portrait -force C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf'
+// TclEventType: WRITE_SCHEMATIC
+// Tcl Message: write_schematic -format pdf -orientation portrait -force C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf 
+// Tcl Message: C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf 
+dismissDialog("Save as PDF File"); // k (cp)
+// [GUI Memory]: 147 MB (+2836kb) [00:24:21]
+// Elapsed time: 301 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 271, 138, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ac (al, cp)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_SCHEMATIC, "Export Schematic..."); // af (al, cp)
+// a (cp): Export Schematic: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// Tcl Command: 'write_schematic C:/Users/nobig/Desktop/CU/HWSynLab/schematic.sch'
+// TclEventType: WRITE_SCHEMATIC
+// Tcl Message: write_schematic C:/Users/nobig/Desktop/CU/HWSynLab/schematic.sch 
+// Tcl Message: C:/Users/nobig/Desktop/CU/HWSynLab/schematic.sch 
+dismissDialog("Export Schematic"); // a (cp)
+// Elapsed time: 77 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_SCHEMATIC, "Export Schematic..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_SCHEMATIC
+// a (cp): Export Schematic: addNotify
+// 'j' command handler elapsed time: 9 seconds
+dismissDialog("Export Schematic"); // a (cp)
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 254, 16, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 413, 212, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SchMenuAndMouse_SELECT_ALL, "Select All"); // af (al, cp)
+// PAPropertyPanels.initPanels (CLK50MHZ0_i (RTL_INV0)) elapsed time: 0.2s
+// PAPropertyPanels.initPanels (timer0_i_n_8) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1149 ms.
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 394, 86, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ac (al, cp)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 407, 93, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // ac (al, cp)
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // ac (al, cp)
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // ac (al, cp)
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ac (al, cp)
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectMenuItem(RDIResourceCommand.RDICommands_SHOW_WORLD_VIEW, "Show World View"); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_SHOW_WORLD_VIEW
+// Elapsed time: 286 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 245, 116, 673, 285, false, false, false, true, false); // f (k, cp) - Popup Trigger
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SchMenuAndMouse_SAVE_AS_PDF_FILE, "Save as PDF File..."); // af (al, cp)
+// k (cp): Save as PDF File: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// Tcl Command: 'write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf'
+// TclEventType: WRITE_SCHEMATIC
+// Tcl Message: write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf 
+// Tcl Message: C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf 
+dismissDialog("Save as PDF File"); // k (cp)
