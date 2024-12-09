@@ -115,8 +115,14 @@ module top(
     assign an = {an3, an2, an1, an0};
      
     wire targetClk;
+    wire [18:0] tclk;
+    assign tclk[0]=clk;
+    genvar c;
+    generate for(c=0;c<18;c=c+1) begin
+        clockDiv fDiv(tclk[c+1],tclk[c]);
+    end endgenerate
     
-    clockDiv fdivTarget(targetClk,clk);
+    clockDiv fdivTarget(targetClk,tclk[18]);
     
     quadSevenSeg q7seg(seg,dp,an0,an1,an2,an3,num0,num1,num2,num3,targetClk);
    

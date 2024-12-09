@@ -356,3 +356,5 @@ write_schematic C:/Users/nobig/Desktop/CU/HWSynLab/schematic.sch
 C:/Users/nobig/Desktop/CU/HWSynLab/schematic.sch
 write_schematic -format pdf -orientation portrait C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
 C:/Users/nobig/Desktop/CU/HWSynLab/schematic.pdf
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 21:30:59 2024...
